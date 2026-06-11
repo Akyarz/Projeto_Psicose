@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicose - Personagens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+<div class="fundo-site-personagens">
+    <video autoplay loop muted playsinline class="video-exclusivo-personagens">
+        <source src="../videos/videoplayback.mp4" type="video/mp4">
+    </video>
+    <div class="camada-escura-personagens"></div>
+</div>
+
+<header id="cabecalho">
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="sobre.html">Sobre O FILME</a></li>
+            <li><a href="personagens.html">PERSONAGENS</a></li>
+            <li><a href="curiosidades.html">CURIOSIDADES</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="trilha-sonora.html">TRILHA SONORA</a></li>
+        </ul>
+        <button class="btn-trailer">▶ TRAILER</button>
+    </nav>
+</header>
+
+<div class="conteudo-personagens">
+    <h1 class="titulo-pagina">PERSONAGENS</h1>
+
+    <div class="grid-personagens">
+        
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/norman_bates.png" alt="Norman Bates" class="foto-personagem"onclick="abrirLightbox(this)">
+            </div>
+            <h3>Norman Bates</h3>
+        </div>
+
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/marion_crane.webp" alt="Marion Crane" class="foto-personagem"onclick="abrirLightbox(this)">
+            </div>
+            <h3>Marion Crane</h3>
+        </div>
+
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/lila_crane.jpg" alt="Lila Crane" class="foto-personagem"onclick="abrirLightbox(this)">
+            </div>
+            <h3>Lila Crane</h3>
+        </div>
+
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/sam_loomis.webp" alt="Sam Loomis" class="foto-personagem"onclick="abrirLightbox(this)">
+            </div>
+            <h3>Sam Loomis</h3>
+        </div>
+
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/Arbogast.avif" alt="Arbogast" class="foto-personagem"onclick="abrirLightbox(this)">
+            </div>
+            <h3>Arbogast</h3>
+        </div>
+        <div class="card-personagem">
+            <div class="container-foto">
+                <img src="../images/personagens/fred_richman.webp" alt="Dr. Fred Richman" class="foto-personagem" onclick="abrirLightbox(this)">
+            </div>
+            <h3>Dr. Fred Richman</h3>
+        </div>
+
+
+        </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" onclick="fecharLightbox()"></div>
+    <div class="lightbox-conteudo">
+        <button class="lightbox-fechar" onclick="fecharLightbox()">✕</button>
+        <img src="" alt="" class="lightbox-img" id="lightbox-img">
+        <p class="lightbox-nome" id="lightbox-nome"></p>
+    </div>
+</div>
+
+<script src="../js/personagens.js"></script>
+
+<footer class="rodape-academic">
+    <div class="conteudo-rodape">
+        <p>&copy; 2026 - Desenvolvido por Rayka</p>
+        <p>Trabalho Acadêmico | Curso de Sistemas de Informação | UniRios</p>
+    </div>
+</footer>
+</body>
+</html>
