@@ -635,28 +635,3 @@ body:has(.conteudo-trilha-sonora) {
     letter-spacing: 1px;
 }
 
-/* ============================================================
-   RESPONSIVIDADE
-   ============================================================ */
-@media (max-width: 768px) {
-    .conteudo-sinopse-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .elenco-sinopse {
-        border-left: none;
-        border-top: 1px solid rgba(56, 3, 3, 0.2);
-        padding-left: 0;
-        padding-top: 20px;
-    }
-
-    .conteudo-autor-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .grid-galeria {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
